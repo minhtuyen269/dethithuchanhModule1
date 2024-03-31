@@ -9,26 +9,26 @@
 <!--Với đầu vào là 2 chuỗi (str1,str2) trong đó sẽ kiểm tra str1 có nằm trong str2 không, -->
 <!--nếu có trả về true và ngược lại false. (không được dùng hàm có sẵn để tìm)-->
 <script>
-    function soSanh(str1, str2) {
+    function soSanhStr(str1, str2) {
         if (str1.length > str2.length) {
-            return false
+            return false;
         }
         for (let i = 0; i <= str2.length - str1.length; i++) {//2<4
-            let fond = true
+            let arr = true;
             for (let j = 0; j < str1.length; j++) {//0<1
                 if (str1[j] !== str2[j + i]) {//b!=b
-                    fond = false
-                    break
+                    arr = false;
+                    break;
                 }
             }
-            if (fond) {
+            if (arr) {
                 return true//(b,)
             }
         }
         return false
     }
 
-    console.log(soSanh("bc", "abcd"))
+    console.log(soSanhStr("code", "codegym"))
 </script>
 </body>
 </html>

@@ -13,16 +13,17 @@
         for (let i = 0; i < arr.length - 1; i++) {
             for (let j = i + 1; j < arr.length; j++) {
                 if (arr[i] < arr[j]) {
-                    let index = arr[i]
-                    arr[i] = arr[j]
-                    arr[j] = index
+                    let index = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = index;
                 }
             }
         }
         return arr
     }
 
-    console.log(sapXep([1, 4, 6, 7, 5, 3]))
+    let arr = [1, 4, 5, 6, 7, 4, 3, 4, 5, 9, 8];
+    console.log(sapXep(arr));
 </script>
 </body>
 </html>

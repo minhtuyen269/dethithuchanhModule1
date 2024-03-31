@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    class line {
+        constructor(x, y, x1, y1) {
+            this.x = x;
+            this.y = y;
+            this.x1 = x1;
+            this.y1 = y1;
+        }
+
+        render(canvas) {
+            let ctx = canvas.getContext("2d")
+            ctx.moveTo(this.x, this.y);
+            ctx.lineTo(this.x1, this.y1);
+            ctx.stroke();
+        }
+    }
+
+    let xline = new line(0, 0, 325, 200)
+    let c = document.getElementById("myCanvas");
+    xline.render(c)
+</script>
+</body>
+</html>
