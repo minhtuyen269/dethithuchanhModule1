@@ -61,12 +61,12 @@
     // let Crl = document.getElementById("myCanvas");
     // circle.render(Crl);
     //đường thẳng
-    class Line {
+    class line {
         constructor(x, y, x1, y1) {
             this.x = x;
             this.y = y;
             this.x1 = x1;
-            this.y1 = y1
+            this.y1 = y1;
         }
 
         render(canvas) {
@@ -77,9 +77,9 @@
         }
     }
 
-    let line = new Line(0, 0, 200, 120)
-    let c = document.getElementById("myCanvas")
-    line.render(c)
+    let xline = new line(0, 0, 325, 200)
+    let c = document.getElementById("myCanvas");
+    xline.render(c)
 
 </script>
 </body>
